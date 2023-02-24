@@ -1,0 +1,13 @@
+rails g model User name:string 
+rails g model Room name:string image:string description:text price:decimal type:string
+rails g model Booking user:references room:references start_date:date end_date:date
+
+class User < ApplicationRecord
+  has_many :bookings, dependent: :destroy
+  has_many :rooms, through: :bookings, dependent: :destroy
+end
+
+class Room < ApplicationRecord
+  has_many :bookings, dependent: :destroy
+  has_many :users, through: :bookings, dependent: :destroy
+end
