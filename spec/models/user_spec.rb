@@ -1,13 +1,27 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  user = User.new(name: 'test', email: 'test@mail.com', password: '123456')
-  before { user.save }
+  before(:each) do
+    @user = User.new(name: 'test', email: 'test@mail.com', password: '123456')
+  end
 
-  it 'should have a name' do
-    user.name = 'a' * 30
-    expect(user).to_not be_valid
-    user.name = nil
-    expect(user).to_not be_valid
+  context 'Testing validations' do
+    it 'user created is valid' do
+      expect(@user).to be_valid
+    end
+    it 'user is invalid if name field is null or larger than 30' do
+      @user.name = 'a' * 50
+      expect(@user).to_not be_valid
+      @user.name = nil
+      expect(@user).to_not be_valid
+    end
+    it 'user is invalid if email field is null' do
+      @user.email = nil
+      expect(@user).to_not be_valid
+    end
+    it 'user is invalid if pasword field is null' do
+      @user.password = nil
+      expect(@user).to_not be_valid
+    end
   end
 end
