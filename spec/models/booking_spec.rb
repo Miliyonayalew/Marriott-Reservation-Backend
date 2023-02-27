@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'date'
 
 RSpec.describe Booking, type: :model do
   before(:each) do
@@ -27,33 +28,27 @@ RSpec.describe Booking, type: :model do
       @booking.end_date = nil
       expect(@booking).to_not be_valid
     end
-    it 'booking is invalid if start_date field is null' do
-      @booking.start_date = nil
+    it 'booking is invalid if start_date field is before today' do
+      @booking.start_date = Date.today - 1.day
       expect(@booking).to_not be_valid
     end
-    # it 'room is invalid if image field is null or larger than 100' do
-    #   @room.image = 'a' * 110
-    #   expect(@room).to_not be_valid
-    #   @room.image = nil
-    #   expect(@room).to_not be_valid
-    # end
-    # it 'room is invalid if image field is null or larger than 400' do
-    #   @room.description = 'a' * 410
-    #   expect(@room).to_not be_valid
-    #   @room.description = nil
-    #   expect(@room).to_not be_valid
-    # end
-    # it 'room is invalid if price field is null or less than zero' do
-    #   @room.price = '-1'
-    #   expect(@room).to_not be_valid
-    #   @room.price = nil
-    #   expect(@room).to_not be_valid
-    # end
-    # it 'room is invalid if room_type field is null or larger than 100' do
-    #   @room.room_type = 'a' * 110
-    #   expect(@room).to_not be_valid
-    #   @room.room_type = nil
-    #   expect(@room).to_not be_valid
-    # end
+    it 'booking is invalid if start_date field is equal or after end_date' do
+      @booking.start_date = Date.today + 7.day
+      @booking.end_date = Date.today + 6.day
+      expect(@booking).to_not be_valid
+      @booking.end_date = Date.today + 7.day
+      expect(@booking).to_not be_valid
+    end
+  end
+
+  context 'Testing associations' do
+    it 'booking should belong to a user' do
+      subject = Booking.reflect_on_association(:user)
+      expect(subject.macro).to eq(:belongs_to)
+    end
+    it 'booking should belong to a room' do
+      subject = Booking.reflect_on_association(:room)
+      expect(subject.macro).to eq(:belongs_to)
+    end
   end
 end

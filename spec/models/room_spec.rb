@@ -40,4 +40,15 @@ RSpec.describe Room, type: :model do
       expect(@room).to_not be_valid
     end
   end
+
+  context 'Testing associations' do
+    it 'room should have many bookings' do
+      subject = Room.reflect_on_association(:bookings)
+      expect(subject.macro).to eq(:has_many)
+    end
+    it 'room should have many users' do
+      subject = Room.reflect_on_association(:users)
+      expect(subject.macro).to eq(:has_many)
+    end
+  end
 end

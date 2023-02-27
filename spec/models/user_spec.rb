@@ -24,4 +24,15 @@ RSpec.describe User, type: :model do
       expect(@user).to_not be_valid
     end
   end
+
+  context 'Testing associations' do
+    it 'user should have many bookings' do
+      subject = User.reflect_on_association(:bookings)
+      expect(subject.macro).to eq(:has_many)
+    end
+    it 'user should have many rooms' do
+      subject = User.reflect_on_association(:rooms)
+      expect(subject.macro).to eq(:has_many)
+    end
+  end
 end
