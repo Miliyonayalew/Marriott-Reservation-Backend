@@ -4,7 +4,8 @@ require 'date'
 RSpec.describe Booking, type: :model do
   before(:each) do
     @user = User.new(name: 'test', email: 'test@mail.com', password: '123456')
-    @room = Room.create(name: 'Room 1', image: 'room1.png', description: 'Room description', price: 80, room_type: 'Single')
+    @room = Room.create(name: 'Room 1', image: 'room1.png', description: 'Room description', price: 80,
+                        room_type: 'Single')
     @booking = Booking.create(user: @user, room: @room, start_date: '2023-03-01', end_date: '2023-03-10')
   end
 

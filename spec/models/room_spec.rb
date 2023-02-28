@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Room, type: :model do
   before(:each) do
-    @room = Room.create(name: 'Room 1', image: 'room1.png', description: 'Room description', price: 80, room_type: 'Single')
+    @room = Room.create(name: 'Room 1', image: 'room1.png', description: 'Room description', price: 80,
+                        room_type: 'Single')
   end
 
   context 'Testing validations' do
