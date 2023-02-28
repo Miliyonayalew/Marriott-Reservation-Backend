@@ -9,7 +9,7 @@ RSpec.describe User, type: :model do
     it 'user created is valid' do
       expect(@user).to be_valid
     end
-    it 'user is invalid if name field is null or larger than 30' do
+    it 'user is invalid if name field is null or larger than 50' do
       @user.name = 'a' * 50
       expect(@user).to_not be_valid
       @user.name = nil
