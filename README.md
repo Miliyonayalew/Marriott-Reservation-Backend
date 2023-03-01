@@ -27,7 +27,7 @@
 
 # 📖 MARRIOT HOTEL RESERVATIONS APP <a name="about-project"></a>
 
-**MARRIOT HOTEL RESERVATIONS APP** is an app to make bookings for the Marrior hotel: you have a list of rooms and you can booking =s for that rooms.
+**MARRIOT HOTEL RESERVATIONS APP** is an app to make bookings for the Marriot hotel rooms.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,25 +70,30 @@
 </details>
 
 <details>
-<summary>Authorization</summary>
-  <ul>
-    <li><a href="https://github.com/CanCanCommunity/cancancan">CanCanCan</a></li>
-  </ul>
-</details>
-
-<details>
 <summary>Testing</summary>
   <ul>
     <li><a href="https://github.com/rspec/rspec-rails">Rspec</a></li>
   </ul>
 </details>
 
+<details>
+<summary>API Documentation</summary>
+  <ul>
+    <li><a href="https://github.com/rswag/rswag">Rswag</a></li>
+  </ul>
+</details></br>
+
 ### Key Features <a name="key-features"></a>
+</br>
 
 - **Users can register and log in**
 - **Users must be logged-in to use the app**
-- **Users can book reservations for specific rooms**
+- **Users can see a home page with the available rooms, and links for doing bookings and my reservations**
+- **When the user selects a specific room, a details page with its full description is shown**
+- **In the details page, the user can book a room with the "Reserve" button**
+- **When the user clicks "Add Room" in the navigation panel, a form for adding a new room is displayed**
 - **Users can see their reservations**
+- **Users can delete a rooom**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,8 +111,8 @@
 
 In order to run this project you need:
 
-- An editor of your preference, for example VSCODE
-- Ruby 3.1.3 or newer
+- A code editor of your preference, for example VSCODE or Atom
+- Ruby 3.1.2
 - Rails 7.0.4 or newer
 - GIT
 - NPM
@@ -122,10 +127,13 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project with:
+Install the gems and dependencies:
 
-    rails new . -T --api -d spostgresql
     bundle install
+
+Make sure you can connect to postgresql and create the database:
+
+    rails db:create
 
 ### Usage
 
@@ -143,16 +151,22 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-<img src="https://ca.slack-edge.com/T47CT8XPG-U038AVDKLJK-c3a58fad94e4-512" alt="Hans" width="40" height="40" /> 
-
 **Danys Linares**
+- GitHub:[@githubhandle](https://github.com/d4nQw3rty) 
+- Twitter:[@twitterhandle](https://twitter.com/Danys_Linares) 
+- LinkedIn:[LinkedIn](https://www.linkedin.com/in/danys-linares/) 
 
 **Oscar Fernandez**
+- GitHub:[@githubhandle](https://github.com/OscarFMdev) 
+- Twitter:[@twitterhandle](https://twitter.com/OscarFMdev) 
+- LinkedIn:[LinkedIn](https://www.linkedin.com/in/OscarFMdev/) 
 
 **Miliyon Ayalew**
+- GitHub:[@githubhandle](https://github.com/Miliyonayalew/) 
+- Twitter:[@twitterhandle](https://twitter.com/MilaAyalew) 
+- LinkedIn:[LinkedIn](https://www.linkedin.com/in/miliyon-ayalew-210808131/) 
 
 **Hans Zizold**
-
 - GitHub:[@githubhandle](https://github.com/HansZizold) 
 - Twitter:[@twitterhandle](https://twitter.com/hanzio27) 
 - LinkedIn:[LinkedIn](https://www.linkedin.com/in/hans-paul-zizold-37129037/) 
@@ -163,8 +177,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Edit and delete Categories**
-- [ ] **Edit and delete Transacions**
+- [ ] **Only admin users can add and delete rooms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +185,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HansZizold/blogapp/issues).
+Feel free to check the [issues page](https://github.com/Miliyonayalew/Marriott-Reservation-Backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,7 +209,7 @@ Give a ⭐️ if you like this project!
 
 ## Copyrights <a name="copyrights"></a>
 
-Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella), under [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
+Original design idea by [Murat Korkmaz](https://www.behance.net/muratk), under [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 <!-- LICENSE -->
 
