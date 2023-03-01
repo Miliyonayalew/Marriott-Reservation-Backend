@@ -1,0 +1,315 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/users/{user_id}/bookings":
+    get:
+      summary: Display User Room Reservation
+      tags:
+      - Room Reservation
+      parameters:
+      - name: user_id
+        in: path
+        description: Current User ID
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Display Reservation Successfully.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    start_date:
+                      type: date
+                    end_date:
+                      type: date
+                    room:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        name:
+                          type: string
+                        room_type:
+                          type: string
+                        image:
+                          type: string
+                        price:
+                          type: integer
+                        description:
+                          type: string
+                      required:
+                      - id
+                      - name
+                      - room_type
+                      - image
+                      - price
+                      - description
+                  required:
+                  - user_id
+                  - room_id
+                  - start_date
+                  - end_date
+        '401':
+          description: Invalid Record not found
+    post:
+      summary: Create Reservation
+      tags:
+      - Create Reservation
+      parameters:
+      - name: user_id
+        in: path
+        description: Current User ID
+        required: true
+        schema:
+          type: integer
+      responses:
+        '201':
+          description: Created Reservation Successfully.
+        '401':
+          description: Invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: integer
+                room_id:
+                  type: integer
+                start_date:
+                  type: date
+                end_date:
+                  type: date
+              required:
+              - user_id
+              - room_id
+              - start_date
+              - end_date
+  "/api/v1/users/{user_id}/bookings/{id}":
+    delete:
+      summary: Delete Room Reservation
+      tags:
+      - Delete Reservation
+      parameters:
+      - name: user_id
+        in: path
+        description: Current User ID
+        required: true
+        schema:
+          type: integer
+      - name: id
+        in: path
+        description: Reservation ID
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Reservation Delete Successfully.
+  "/api/v1/login":
+    post:
+      summary: Log in User
+      tags:
+      - Login
+      parameters: []
+      responses:
+        '200':
+          description: Logged in succesfully.
+        '401':
+          description: Invalid Email or password.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - email
+              - password
+  "/api/v1/logout":
+    delete:
+      summary: Logout User
+      tags:
+      - Logout
+      parameters:
+      - name: Authorization
+        in: header
+        description: Authorization Token
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Logged out succesfully
+  "/api/v1/rooms":
+    get:
+      summary: Display Rooms
+      tags:
+      - Rooms
+      responses:
+        '200':
+          description: Rooms displayed
+          content:
+            application/json:
+              schema:
+                type: array
+                properties:
+                  name:
+                    type: string
+                  image:
+                    type: string
+                  description:
+                    type: string
+                  price:
+                    type: string
+                  room_type:
+                    type: string
+                required:
+                - name
+                - image
+                - description
+                - price
+                - room_type
+    post:
+      summary: Create a Room
+      tags:
+      - Create Room
+      parameters: []
+      responses:
+        '201':
+          description: Room Created Successfully
+        '401':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                image:
+                  type: string
+                description:
+                  type: string
+                price:
+                  type: integer
+                room_type:
+                  type: string
+              required:
+              - name
+              - image
+              - description
+              - price
+              - room_type
+  "/api/v1/rooms/{id}":
+    get:
+      summary: Display Single Room Details
+      tags:
+      - Display Room Details
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Room found displayed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  image:
+                    type: string
+                  description:
+                    type: string
+                  price:
+                    type: string
+                  room_type:
+                    type: string
+                required:
+                - name
+                - image
+                - description
+                - price
+                - room_type
+        '401':
+          description: Invalid Record not found
+  "/api/v1/signup":
+    post:
+      summary: Sign up User
+      tags:
+      - Sign Up
+      parameters: []
+      responses:
+        '200':
+          description: Sign up success
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                password_confirmation:
+                  type: string
+              required:
+              - name
+              - email
+              - password
+              - password_confirmation
+  "/api/v1/users":
+    get:
+      summary: Current User
+      tags:
+      - Display Current Users
+      responses:
+        '200':
+          description: successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  email:
+                    type: string
+                required:
+                - id
+                - name
+                - email
+        '401':
+          description: You need to sign in or sign up before continuing.
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
