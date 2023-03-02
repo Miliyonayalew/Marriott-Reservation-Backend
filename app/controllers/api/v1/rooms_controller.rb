@@ -1,5 +1,5 @@
 class Api::V1::RoomsController < ApplicationController
-  before_action :authenticate_user!, only %i[create update destroy]
+  before_action :authenticate_user!, only: %i[create update destroy]
   before_action :set_room, only: %i[show update destroy]
 
   def index
