@@ -84,4 +84,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: Marriott_Reservation_Backend_production
+  username: Marriott_Reservation_Backend
+  password: <%= ENV["MARRIOTT_RESERVATION_BACKEND_DATABASE_PASSWORD"] %>
