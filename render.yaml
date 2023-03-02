@@ -19,4 +19,3 @@ services:
     name: redis
     ipAllowList: []
     plan: free
-    maxmemoryPolicy: no eviction
