@@ -1,5 +1,5 @@
 class Api::V1::BookingsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: %i[create update destroy]
 
   def index
     render json: current_user.bookings.all
