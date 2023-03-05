@@ -13,7 +13,7 @@ class Api::V1::BookingsController < ApplicationController
         message: 'Room Booked Successfully'
       }, status: :created
     else
-      render json: @booking.errors, status: :unprocessable_entity
+      render json: { error: @booking.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
@@ -25,7 +25,7 @@ class Api::V1::BookingsController < ApplicationController
         message: 'Booking Deleted Successfully'
       }, status: :ok
     else
-      render json: @booking.errors, status: :unprocessable_entity
+      render json: { error: @booking.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
