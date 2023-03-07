@@ -55,7 +55,6 @@ RSpec.describe '/api/v1/rooms', type: :request do
         let(:id) { @room.id }
         run_test!
       end
-
     end
   end
 

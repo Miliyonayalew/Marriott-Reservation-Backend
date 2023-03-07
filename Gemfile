@@ -57,4 +57,4 @@ gem 'devise-jwt'
 # Linters
 gem 'rubocop', '~> 1.46'
 
-gem "active_model_serializers", "~> 0.10.13"
+gem 'active_model_serializers', '~> 0.10.13'
