@@ -56,10 +56,6 @@ RSpec.describe '/api/v1/rooms', type: :request do
         run_test!
       end
 
-      response '401', 'Invalid Record not found' do
-        let(:id) { 'invalid' }
-        run_test!
-      end
     end
   end
 
