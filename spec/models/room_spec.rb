@@ -22,7 +22,7 @@ RSpec.describe Room, type: :model do
       @room.image = nil
       expect(@room).to_not be_valid
     end
-    it 'room is invalid if image field is null or larger than 400' do
+    it 'room is invalid if description field is null or larger than 400' do
       @room.description = 'a' * 410
       expect(@room).to_not be_valid
       @room.description = nil
