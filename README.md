@@ -2,32 +2,38 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [🙏 Copyright](#copyrights)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 MARRIOT HOTEL RESERVATIONS APP ](#-marriot-hotel-reservations-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+- [Before Starting the Project](#before-starting-the-project)
+    - [Front End Kanban Board](#front-end-kanban-board)
+    - [Back End Kanban Board](#back-end-kanban-board)
+- [After Implementing the Project](#after-implementing-the-project)
+    - [Front End Kanban Board](#front-end-kanban-board-1)
+    - [Back End Kanban Board](#back-end-kanban-board-1)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Setup the Backend](#setup-the-backend)
+    - [Setup the Frontend](#setup-the-frontend)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [Copyrights ](#copyrights-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 MARRIOT HOTEL RESERVATIONS APP <a name="about-project"></a>
 
-**MARRIOT HOTEL RESERVATIONS APP** is an app to make bookings for the Marriot hotel rooms developed with Ruby on Rails for the Back-end and React for the Front-end.
+**MARRIOT HOTEL RESERVATIONS APP** is an app that allows users to book a room in a marriot hotel. Users can see a list of available rooms, and can book a room for a specific date range. Users can also see their reservations and delete them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -92,7 +98,8 @@
 
 - **Users can register and log in**
 - **Users must be logged-in to use the app**
-- **Users can see a home page with the available rooms, and links for doing bookings and my reservations**
+- **Users can see a home page with the available rooms**
+- **Users can book a room**
 - **When the user selects a specific room, a details page with its full description is shown**
 - **In the details page, the user can book a room with the "Reserve" button**
 - **When the user clicks "Add Room" in the navigation panel, a form for adding a new room is displayed**
@@ -107,6 +114,25 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Kanban Board -->
+
+**Kanban Board**
+
+**We Used Kanban Board to organize our work and we are a group of 4 peoples**
+
+# Before Starting the Project
+### Front End Kanban Board
+
+
+### Back End Kanban Board
+
+# After Implementing the Project
+### Front End Kanban Board
+
+
+### Back End Kanban Board
+
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -119,18 +145,20 @@ In order to run this project you need:
 - Ruby 3.1.2
 - Rails 7.0.4 or newer
 - GIT
-- YARN
-- NPM
+- YARN or - NPM
 - PostgreSQL
 
 ### Setup
 
 Clone this repositories to your desired folder:
 
+    ## Backend
     git clone https://github.com/Miliyonayalew/Marriott-Reservation-Backend
+
+    ## Frontend
     git clone https://github.com/OscarFMdev/Marriott-Reservation-Frontend
 
-### Install Backend
+### Setup the Backend
 
     cd ./Marriott-Reservation-Backend
 
@@ -141,8 +169,10 @@ Install the gems and dependencies:
 Make sure you can connect to postgresql and create the database:
 
     rails db:create
+    rails db:migrate
+    rails db:seed
 
-### Install Frontend
+### Setup the Frontend
 
     cd ./Marriott-Reservation-Frontend
 
@@ -201,6 +231,8 @@ To run tests in the Frontend, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Only admin users can add and delete rooms**
+- [ ] **Add availability of rooms**
+- [ ] **Add a search bar to search for rooms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
