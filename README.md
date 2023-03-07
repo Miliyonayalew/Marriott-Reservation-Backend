@@ -27,7 +27,7 @@
 
 # 📖 MARRIOT HOTEL RESERVATIONS APP <a name="about-project"></a>
 
-**MARRIOT HOTEL RESERVATIONS APP** is an app to make bookings for the Marriot hotel rooms.
+**MARRIOT HOTEL RESERVATIONS APP** is an app to make bookings for the Marriot hotel rooms developed with Ruby on Rails for the Back-end and React for the Front-end.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,6 +51,8 @@
   <summary>Frontend</summary>
   <ul>
     <li><a href="https://reactjs.org/">React</a></li>
+    <li><a href="https://vitejs.dev/guide/">VITE</a></li>
+    React was deployed with VITE
   </ul>
 </details>
 
@@ -73,6 +75,8 @@
 <summary>Testing</summary>
   <ul>
     <li><a href="https://github.com/rspec/rspec-rails">Rspec</a></li>
+    <li><a href="https://vitest.dev/guide/">Vitest</a></li>
+    <li><a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a></li>
   </ul>
 </details>
 
@@ -115,17 +119,20 @@ In order to run this project you need:
 - Ruby 3.1.2
 - Rails 7.0.4 or newer
 - GIT
+- YARN
 - NPM
 - PostgreSQL
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repositories to your desired folder:
 
     git clone https://github.com/Miliyonayalew/Marriott-Reservation-Backend
-    cd ./Marriott-Reservation-Backend
+    git clone https://github.com/OscarFMdev/Marriott-Reservation-Frontend
 
-### Install
+### Install Backend
+
+    cd ./Marriott-Reservation-Backend
 
 Install the gems and dependencies:
 
@@ -135,17 +142,33 @@ Make sure you can connect to postgresql and create the database:
 
     rails db:create
 
+### Install Frontend
+
+    cd ./Marriott-Reservation-Frontend
+
+Install the gems and dependencies:
+
+    yarn install
+
 ### Usage
 
-To run the project, execute the following command:
+To run the Backend, execute the following command:
 
     rails server
 
+To run the Frontend, execute the following command:
+
+    yarn dev
+
 ### Run tests
 
-To run tests, run the following command:
+To run tests in the Backend, run the following command:
 
     rspec
+
+To run tests in the Frontend, run the following command:
+
+    yarn test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
