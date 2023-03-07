@@ -16,13 +16,13 @@ RSpec.describe Room, type: :model do
       @room.name = nil
       expect(@room).to_not be_valid
     end
-    it 'room is invalid if image field is null or larger than 100' do
-      @room.image = 'a' * 110
+    it 'room is invalid if image field is null or larger than 500' do
+      @room.image = 'a' * 510
       expect(@room).to_not be_valid
       @room.image = nil
       expect(@room).to_not be_valid
     end
-    it 'room is invalid if image field is null or larger than 400' do
+    it 'room is invalid if description field is null or larger than 400' do
       @room.description = 'a' * 410
       expect(@room).to_not be_valid
       @room.description = nil
