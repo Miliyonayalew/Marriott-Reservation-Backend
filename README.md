@@ -172,6 +172,14 @@ Make sure you can connect to postgresql and create the database:
     rails db:migrate
     rails db:seed
 
+    And delete the credential and master key inside the config folder
+    then generate new one with the following command
+
+    `EDITOR="code --wait" bin/rails credentials:edit`
+
+    Then run the following command to start the server
+    rails s
+
 ### Setup the Frontend
 
     cd ./Marriott-Reservation-Frontend
