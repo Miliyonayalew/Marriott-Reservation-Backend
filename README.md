@@ -120,17 +120,23 @@
 
 **We Used Kanban Board to organize our work and we are a group of 4 peoples**
 
-# Before Starting the Project
+# Before Imlementing the Project
 ### Front End Kanban Board
-
+![image](https://user-images.githubusercontent.com/35680940/220982383-42733377-ac3b-4de9-97ed-728ce7e16e2d.png)
+![image](https://user-images.githubusercontent.com/35680940/221006026-9efb2f72-5aa4-49ea-adf9-a10b7a6307a6.png)
 
 ### Back End Kanban Board
+![image](https://user-images.githubusercontent.com/35680940/220982924-4eaff323-8eac-447e-b924-0c5573898dcc.png)
+
+![image](https://user-images.githubusercontent.com/35680940/220982832-8ae6c165-04cd-4afe-8c9a-0d7f57ca9da0.png)
 
 # After Implementing the Project
 ### Front End Kanban Board
 
 
 ### Back End Kanban Board
+![image](https://user-images.githubusercontent.com/35680940/223836552-b83ff555-0fda-4ed4-8df0-e8caf32ad399.png)
+![image](https://user-images.githubusercontent.com/35680940/223837085-51485c87-27e5-4d33-ba99-0097b1f9e54d.png)
 
 
 <!-- GETTING STARTED -->
