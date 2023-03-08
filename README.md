@@ -114,6 +114,8 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+[Front-end Repository](https://github.com/OscarFMdev/Marriott-Reservation-Frontend)
+
 <!-- Kanban Board -->
 
 # Kanban Board 
