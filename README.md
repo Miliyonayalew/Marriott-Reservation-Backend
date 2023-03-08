@@ -184,6 +184,10 @@ Make sure you can connect to postgresql and create the database:
 
     cd ./Marriott-Reservation-Frontend
 
+If the user doesn't have yarn, install it:
+
+    npm install --global yarn
+
 Install the gems and dependencies:
 
     yarn install
