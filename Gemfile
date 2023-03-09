@@ -39,10 +39,6 @@ gem 'rack-cors'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-
-  # Tests
-  gem 'rspec-rails'
-  gem 'rswag'
 end
 
 group :development do
@@ -58,3 +54,7 @@ gem 'devise-jwt'
 gem 'rubocop', '~> 1.46'
 
 gem 'active_model_serializers', '~> 0.10.13'
+
+# Tests
+gem 'rspec-rails'
+gem 'rswag'
