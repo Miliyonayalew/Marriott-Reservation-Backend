@@ -251,8 +251,6 @@ paths:
                 - description
                 - price
                 - room_type
-        '401':
-          description: Invalid Record not found
   "/api/v1/signup":
     post:
       summary: Sign up User
@@ -312,4 +310,4 @@ servers:
 - url: https://{defaultHost}
   variables:
     defaultHost:
-      default: www.example.com
+      default: marriott-reservation.onrender.com

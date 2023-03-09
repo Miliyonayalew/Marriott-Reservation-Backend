@@ -1,19 +1,28 @@
 <a name="readme-top"></a>
+<div align="center">
 
+  <img src="logo.jpeg" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>MARRIOTT HOTEL RESERVATIONS APP</b></h3>
+
+</div>
+<br/>
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 MARRIOT HOTEL RESERVATIONS APP ](#-marriot-hotel-reservations-app-)
+- [📖 MARRIOTT HOTEL RESERVATIONS APP ](#-marriott-hotel-reservations-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-- [Before Starting the Project](#before-starting-the-project)
-    - [Front End Kanban Board](#front-end-kanban-board)
-    - [Back End Kanban Board](#back-end-kanban-board)
-- [After Implementing the Project](#after-implementing-the-project)
+- [Kanban Board](#kanban-board)
+  - [Before Implementing the Project](#before-implementing-the-project)
+    - [Front-End Kanban Board](#front-end-kanban-board)
+    - [Back-End Kanban Board](#back-end-kanban-board)
+  - [After Implementing the Project](#after-implementing-the-project)
     - [Front End Kanban Board](#front-end-kanban-board-1)
-    - [Back End Kanban Board](#back-end-kanban-board-1)
+    - [Back-End Kanban Board](#back-end-kanban-board-1)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -31,9 +40,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 MARRIOT HOTEL RESERVATIONS APP <a name="about-project"></a>
+# 📖 MARRIOTT HOTEL RESERVATIONS APP <a name="about-project"></a>
 
-**MARRIOT HOTEL RESERVATIONS APP** is an app that allows users to book a room in a marriot hotel. Users can see a list of available rooms, and can book a room for a specific date range. Users can also see their reservations and delete them.
+**MARRIOTT HOTEL RESERVATIONS APP** is an app that allows users to book a room in a Marriott hotel. Users can see a list of available rooms, and can book a room for a specific date range. Users can also see their reservations and delete them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -110,7 +119,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+- [Live-Demo-Link](https://marriott-reservation.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +131,7 @@
 
 **We Used Kanban Board to organize our work and we are a group of 4 peoples**
 
-## Before Imlementing the Project
+## Before Implementing the Project
 ### Front-End Kanban Board
 - [Kanban board screenshoot 1](https://user-images.githubusercontent.com/35680940/220982383-42733377-ac3b-4de9-97ed-728ce7e16e2d.png)
 - [Kanban board screenshoot 2](https://user-images.githubusercontent.com/35680940/221006026-9efb2f72-5aa4-49ea-adf9-a10b7a6307a6.png)
