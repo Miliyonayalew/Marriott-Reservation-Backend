@@ -130,9 +130,11 @@
 # Kanban Board 
 
 **We Used Kanban Board to organize our work and we are a group of 4 peoples**
+- [Front-end Kanban-Board](https://github.com/OscarFMdev/Marriott-Reservation-Frontend/projects/1)
+- [Back-end Kanban-Board](https://github.com/Miliyonayalew/Marriott-Reservation-Backend/projects/1)
 
 ## Before Implementing the Project
-### Front-End Kanban Board
+### Front-End Kanban-Board 
 - [Kanban board screenshoot 1](https://user-images.githubusercontent.com/35680940/220982383-42733377-ac3b-4de9-97ed-728ce7e16e2d.png)
 - [Kanban board screenshoot 2](https://user-images.githubusercontent.com/35680940/221006026-9efb2f72-5aa4-49ea-adf9-a10b7a6307a6.png)
 
