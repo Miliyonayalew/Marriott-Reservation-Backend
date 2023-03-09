@@ -114,6 +114,8 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+[Front-end Repository](https://github.com/OscarFMdev/Marriott-Reservation-Frontend)
+
 <!-- Kanban Board -->
 
 # Kanban Board 
@@ -132,7 +134,8 @@
 
 ## After Implementing the Project
 ### Front End Kanban Board
-
+- [Kanban board screenshoot 1](https://user-images.githubusercontent.com/35680940/223859571-e5209b4a-8c4a-4e0a-923a-7e3b47b36a29.png)
+- [Kanban board screenshoot 2](https://user-images.githubusercontent.com/35680940/223859645-2036fd5b-8929-47fe-8f96-80cb946a088c.png)
 
 ### Back-End Kanban Board
 - [Kanban board screenshoot 1](https://user-images.githubusercontent.com/35680940/223836552-b83ff555-0fda-4ed4-8df0-e8caf32ad399.png)
