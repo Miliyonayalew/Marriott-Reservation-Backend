@@ -199,6 +199,10 @@ Make sure you can connect to postgresql and create the database:
 
     Then run the following command to start the server
     rails s
+    
+## API Documentation
+
+- [API Documentation](https://marriott-reservation.onrender.com/api-docs/index.html)
 
 ### Setup the Frontend
 
